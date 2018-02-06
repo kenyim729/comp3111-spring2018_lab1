@@ -11,8 +11,20 @@ public class Lab1Activity {
 			sum += arr[i];
 		}
 		
+		int max=arr[0];
+		int min=arr[0];
+		for(int i=0; i< arr.length ; i++) {
+			if (arr[i]>max) {
+				max=arr[i];
+			}
+			if (arr[i]<min) {
+				min=arr[i];
+			}
+		}
+		
 		System.out.println(String.format("Sum of the number is %d", sum));
+		System.out.print(String.format("Min = %d", min));
+		System.out.print(String.format("; Max = %d", max));
 		
 	}
-	
 }
